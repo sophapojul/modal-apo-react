@@ -1,0 +1,54 @@
+{
+  "name": "modal-apo-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sophapojul/modal-apo-react.git"
+  },
+  "author": {
+    "name": "Pascal Allau",
+    "email": "pascal.allau@zohomail.eu"
+  },
+  "private": false,
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A simple modal component for React",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "modal",
+    "alert",
+    "confirm",
+    "popup",
+    "dialog",
+    "react",
+    "react-component",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "postcss": "^8.4.23",
+    "postcss-modules": "^6.0.0",
+    "react": "^18.2.0",
+    "react-css-modules": "^4.7.11",
+    "react-dom": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
